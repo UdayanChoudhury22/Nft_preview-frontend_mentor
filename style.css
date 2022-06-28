@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Outfit:wght@300;400;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container
+{
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.wrapper
+{
+    margin: 2rem 1rem;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 17px;
+    box-shadow: 5px 4px 10px 10px hsl(217, 54%, 11%);
+}
+
+.image_top
+{
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.image_top img
+{
+    width: 100%;
+    
+    display: block;
+}
+
+.img_overlay
+{
+    background-color: hsla(178, 100%, 50%,0.5);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.image_top:hover .img_overlay 
+{
+    display: block;
+}
+
+.img_overlay img
+{
+    position: absolute;
+    width: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.box_text a
+{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 22px;
+    padding: 20px 0;
+    display: inline-block;
+    transition: 0.4s ease;
+}
+
+.box_text a:hover
+{
+    color: hsl(178, 100%, 50%);
+}
+
+p
+{
+    color: hsl(215, 51%, 70%);
+}
+
+.flex
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.eth, .days
+{
+    display: flex;
+    align-items: center;
+}
+
+.eth p
+{
+    color: cyan;
+    font-weight: bold;
+    padding-left: 7px;
+}
+
+.days p
+{
+    padding-left: 7px;
+}
+
+hr
+{
+    border-color: hsl(216, 48%, 63%);
+}
+
+.author
+{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.author img
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 2px solid whitesmoke;
+    margin-right: 15px;
+}
+
+.author p a.name
+{
+    color: wheat;
+    font-size: 16px;
+}
+.author p a.name:hover
+{
+    color: cyan;
+}
